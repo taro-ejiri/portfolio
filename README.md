@@ -1,7 +1,7 @@
 # portfolio.local
 ポートフォリオサイトpart2
 
-# 環境設定
+## 環境設定
 
 【 CMS 】 
 WordPress
