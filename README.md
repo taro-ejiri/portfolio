@@ -7,5 +7,5 @@ WordPress
 SASS(SCSS)
 jQuery
 
-Glup
+Gulp
 
