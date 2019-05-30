@@ -9,10 +9,10 @@
 ### 【 CMS 】 
 WordPress
 
-###【 言語、フレームワーク等 】
+### 【 言語、フレームワーク等 】
 SASS(SCSS)
 jQuery
 Vue.js(現状はCDN)
 
-###【 ビルドツール 】
+### 【 ビルドツール 】
 gulp
