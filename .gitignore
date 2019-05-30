@@ -7,7 +7,7 @@ desktop.ini
 
 # Wordpress 更新不要
 /public/*
-
+!/public/wp-config.php
 !/public/wp-content
 /public/wp-content/*
 
