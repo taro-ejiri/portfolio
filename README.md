@@ -10,9 +10,7 @@
 WordPress
 
 ### 【 言語、フレームワーク等 】
-SASS(SCSS)
-jQuery
-Vue.js(現状はCDN)
+SASS(SCSS) / jQuery / Vue.js(現状はCDN)
 
 ### 【 ビルドツール 】
 gulp
