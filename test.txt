@@ -1,4 +1,0 @@
-test.html
-
-
-find Desktop/portfolio.local -name ".DS_Store" -print&nbsp; -exec rm {} ";"
