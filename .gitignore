@@ -1,1 +1,9 @@
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# Local限定　更新不要
+/sql
+
+# Wordpress 更新不要
+/public/*
