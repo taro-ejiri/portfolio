@@ -10,7 +10,8 @@ WordPress
 - jQuery
 - Vue.js(現状はCDN)
 ### 【 ビルドツール 】
-gulp
+gulp（CSS、画像圧縮 etc）  
+Webpack（JSビルド）※予定
 ## 環境設定
 ローカル環境は Local by Flywheelを使用  
 wp-config.php と themesファイルのみ編集対象
