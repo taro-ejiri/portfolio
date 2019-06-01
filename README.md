@@ -12,7 +12,7 @@ WordPress
 ### 【 ビルドツール 】
 gulp
 ## 環境設定
-ローカル環境は Local by Flywheelを使用
+ローカル環境は Local by Flywheelを使用  
 wp-config.php と themesファイルのみ編集対象
 ### 使い方
 WP固定ページなどダッシュボード内を編集した場合
