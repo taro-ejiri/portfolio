@@ -1,4 +1,4 @@
-# portfolio.local
+# portfolio
 ポートフォリオサイト
 
 ## 環境設定
