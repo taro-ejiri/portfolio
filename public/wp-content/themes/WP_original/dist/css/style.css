@@ -1,0 +1,146 @@
+.icon {
+	display: inline-block;
+}
+#jumbotron{ 
+	margin-top: 200px; 
+	background-image: url("../img/img_main_1.jpg");
+	background-size: cover;
+	background-position: center 20%; 
+	color: #FFF;
+	padding: 50px 50px;
+}
+
+.icon_arrow {
+	width: 128px;
+	height: 128px;
+	background-image: url(../images/sprite.png);
+	background-position: 0px 0px;
+}
+
+.test11 {
+	background-image: url(../dist/images/sprite.png);
+}
+
+.bg_test {
+	background-image: url(../dist/images/sprite.png);
+	width: 128px;
+	height: 128px;
+	background-repeat:
+}
+div p {
+	font-weight: bold;
+}
+
+h1 {
+	color: #525252;
+}
+
+h2 {
+	color: #e22828;
+}
+
+main {
+	display: -webkit-box;
+	display: flex;
+	max-width: 1000px;
+	padding: 15px;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+.principle .items_three {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding: 0 0 15px;
+}
+
+.point-frame {
+	width: 30%;
+	float: left;
+}
+
+.point-description {
+	width: 70%;
+	padding: 0;
+	float: right;
+}
+
+h3.point-title {
+	font-size: 18px;
+	text-align: center;
+}
+
+}
+
+@media screen and (max-width: 414px) {
+
+#area404 {
+	min-height: 525px;
+	padding-top: 100px;
+}
+
+#area404 h2 {
+	padding: 0 10px;
+	font-size: 25px;
+}
+
+#area404 p {
+	font-size: 16px;
+}
+
+}
+
+@media only screen and (max-width: 414px) {
+
+.point-frame {
+	width: 100%;
+	float: none;
+}
+
+.point-description {
+	width: 100%;
+}
+
+.point-frame {
+	width: 100%;
+	float: none;
+}
+
+.point-description {
+	width: 100%;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+
+#area404 {
+	min-height: 450px;
+	padding-top: 100px;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+
+#area404 {
+	min-height: 300px;
+	margin-top: 90px;
+	padding-top: 50px;
+}
+
+#area404 h2 {
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+#area404 p {
+	margin-bottom: 0;
+}
+
+}
+

@@ -1,3 +1,15 @@
+@import "sprite";
+.icon {
+  display: inline-block;
+}
+.icon_arrow {
+  @include sprite($sprite-fb_out);
+}
+
+.test11{
+	background-image: url(dist/images/sprite.png);
+}
+
 // ネストのテスト
 div {
   p {
@@ -104,8 +116,4 @@ main {
 	}
 }
 
-i {
-    display: block;
-    @include sprite($sprite-cat);
-}
 

@@ -11,15 +11,22 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer'); 
 // CSSプロパティを並び替える
 const cssdeclsort = require('css-declaration-sorter');
+//メディアクエリを1つにまとめる
+const mmq = require('gulp-merge-media-queries');
+
+//スプライト画像用プラグイン
+const spritesmith = require('gulp.spritesmith');
+
+
 
 // gulp scssで行われるタスク
 gulp.task("scss", function() {
 
 // ★ style.scssファイルを監視　//自動で更新されたくない場合はこの下のreturn gulp.watch...を削除
-  return gulp.watch("sass/**/*.scss", function () {
+  return gulp.watch("src/sass/**/*.scss", function () {
 
     // 下記フォルダにあるscssファイルが対象
-    return gulp.src('sass/**/*.scss')
+    return gulp.src('src/sass/**/*.scss')
 
         // コンパイル時の整形された際、閉じカッコで
         .pipe(sass({outputStyle: "expanded"}))
@@ -35,10 +42,33 @@ gulp.task("scss", function() {
         // Alphabetically(アルファベット順)  SMACSS(重要なプロパティ順) Concentric CSS(ボックスモデルの外から内)
         .pipe(postcss([cssdeclsort({ order: 'SMACSS' })]))
 
+        // メディアクエリを1つにまとめる
+        .pipe(mmq())
+
         // cssフォルダー以下に保存
-        .pipe(gulp.dest("css"))
+        .pipe(gulp.dest("dist/css"))
   });
 });
+
+// gulp sprite で行われるタスク
+gulp.task('sprite', () => {
+  let spriteData = gulp.src('src/images/sprite/*.png')
+    .pipe(spritesmith({
+      imgName: 'sprite.png',                        // スプライト画像
+      cssName: '_sprite.scss',                      // 生成される CSS テンプレート
+      imgPath: 'dist/images/sprite.png', // 生成される CSS テンプレートに記載されるスプライト画像パス
+      cssFormat: 'scss',                            // フォーマット拡張子
+      cssVarMap: (sprite) => {
+        sprite.name = "sprite-" + sprite.name;      // 生成される CSS テンプレートに変数の一覧を記述
+      }
+    }));
+  spriteData.img
+    .pipe(gulp.dest('dist/images'));     // imgName で指定したスプライト画像の保存先
+  return spriteData.css
+    .pipe(gulp.dest('src/sass'));       // cssName で指定した CSS テンプレートの保存先
+});
+
+
 
 /// npx gulp コマンドで動かすもの ////////////////////////////////////////////
 gulp.task('default', gulp.task('scss'));

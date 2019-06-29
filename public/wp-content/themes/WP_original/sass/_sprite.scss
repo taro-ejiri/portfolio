@@ -1,0 +1,205 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$sprite-fb-out-name: 'sprite-fb_out';
+$sprite-fb-out-x: 0px;
+$sprite-fb-out-y: 0px;
+$sprite-fb-out-offset-x: 0px;
+$sprite-fb-out-offset-y: 0px;
+$sprite-fb-out-width: 128px;
+$sprite-fb-out-height: 128px;
+$sprite-fb-out-total-width: 512px;
+$sprite-fb-out-total-height: 384px;
+$sprite-fb-out-image: 'dist/images/sprite.png';
+$sprite-fb-out: (0px, 0px, 0px, 0px, 128px, 128px, 512px, 384px, 'dist/images/sprite.png', 'sprite-fb_out', );
+$sprite-fb-over-name: 'sprite-fb_over';
+$sprite-fb-over-x: 128px;
+$sprite-fb-over-y: 0px;
+$sprite-fb-over-offset-x: -128px;
+$sprite-fb-over-offset-y: 0px;
+$sprite-fb-over-width: 128px;
+$sprite-fb-over-height: 128px;
+$sprite-fb-over-total-width: 512px;
+$sprite-fb-over-total-height: 384px;
+$sprite-fb-over-image: 'dist/images/sprite.png';
+$sprite-fb-over: (128px, 0px, -128px, 0px, 128px, 128px, 512px, 384px, 'dist/images/sprite.png', 'sprite-fb_over', );
+$sprite-github-out-name: 'sprite-github_out';
+$sprite-github-out-x: 0px;
+$sprite-github-out-y: 128px;
+$sprite-github-out-offset-x: 0px;
+$sprite-github-out-offset-y: -128px;
+$sprite-github-out-width: 128px;
+$sprite-github-out-height: 128px;
+$sprite-github-out-total-width: 512px;
+$sprite-github-out-total-height: 384px;
+$sprite-github-out-image: 'dist/images/sprite.png';
+$sprite-github-out: (0px, 128px, 0px, -128px, 128px, 128px, 512px, 384px, 'dist/images/sprite.png', 'sprite-github_out', );
+$sprite-github-over-name: 'sprite-github_over';
+$sprite-github-over-x: 128px;
+$sprite-github-over-y: 128px;
+$sprite-github-over-offset-x: -128px;
+$sprite-github-over-offset-y: -128px;
+$sprite-github-over-width: 128px;
+$sprite-github-over-height: 128px;
+$sprite-github-over-total-width: 512px;
+$sprite-github-over-total-height: 384px;
+$sprite-github-over-image: 'dist/images/sprite.png';
+$sprite-github-over: (128px, 128px, -128px, -128px, 128px, 128px, 512px, 384px, 'dist/images/sprite.png', 'sprite-github_over', );
+$sprite-github-over2-name: 'sprite-github_over2';
+$sprite-github-over2-x: 256px;
+$sprite-github-over2-y: 0px;
+$sprite-github-over2-offset-x: -256px;
+$sprite-github-over2-offset-y: 0px;
+$sprite-github-over2-width: 128px;
+$sprite-github-over2-height: 128px;
+$sprite-github-over2-total-width: 512px;
+$sprite-github-over2-total-height: 384px;
+$sprite-github-over2-image: 'dist/images/sprite.png';
+$sprite-github-over2: (256px, 0px, -256px, 0px, 128px, 128px, 512px, 384px, 'dist/images/sprite.png', 'sprite-github_over2', );
+$sprite-instagram-out-name: 'sprite-instagram_out';
+$sprite-instagram-out-x: 256px;
+$sprite-instagram-out-y: 128px;
+$sprite-instagram-out-offset-x: -256px;
+$sprite-instagram-out-offset-y: -128px;
+$sprite-instagram-out-width: 128px;
+$sprite-instagram-out-height: 128px;
+$sprite-instagram-out-total-width: 512px;
+$sprite-instagram-out-total-height: 384px;
+$sprite-instagram-out-image: 'dist/images/sprite.png';
+$sprite-instagram-out: (256px, 128px, -256px, -128px, 128px, 128px, 512px, 384px, 'dist/images/sprite.png', 'sprite-instagram_out', );
+$sprite-instagram-over-name: 'sprite-instagram_over';
+$sprite-instagram-over-x: 0px;
+$sprite-instagram-over-y: 256px;
+$sprite-instagram-over-offset-x: 0px;
+$sprite-instagram-over-offset-y: -256px;
+$sprite-instagram-over-width: 128px;
+$sprite-instagram-over-height: 128px;
+$sprite-instagram-over-total-width: 512px;
+$sprite-instagram-over-total-height: 384px;
+$sprite-instagram-over-image: 'dist/images/sprite.png';
+$sprite-instagram-over: (0px, 256px, 0px, -256px, 128px, 128px, 512px, 384px, 'dist/images/sprite.png', 'sprite-instagram_over', );
+$sprite-line-out-name: 'sprite-line_out';
+$sprite-line-out-x: 128px;
+$sprite-line-out-y: 256px;
+$sprite-line-out-offset-x: -128px;
+$sprite-line-out-offset-y: -256px;
+$sprite-line-out-width: 128px;
+$sprite-line-out-height: 128px;
+$sprite-line-out-total-width: 512px;
+$sprite-line-out-total-height: 384px;
+$sprite-line-out-image: 'dist/images/sprite.png';
+$sprite-line-out: (128px, 256px, -128px, -256px, 128px, 128px, 512px, 384px, 'dist/images/sprite.png', 'sprite-line_out', );
+$sprite-line-over-name: 'sprite-line_over';
+$sprite-line-over-x: 256px;
+$sprite-line-over-y: 256px;
+$sprite-line-over-offset-x: -256px;
+$sprite-line-over-offset-y: -256px;
+$sprite-line-over-width: 128px;
+$sprite-line-over-height: 128px;
+$sprite-line-over-total-width: 512px;
+$sprite-line-over-total-height: 384px;
+$sprite-line-over-image: 'dist/images/sprite.png';
+$sprite-line-over: (256px, 256px, -256px, -256px, 128px, 128px, 512px, 384px, 'dist/images/sprite.png', 'sprite-line_over', );
+$sprite-twitter-out-name: 'sprite-twitter_out';
+$sprite-twitter-out-x: 384px;
+$sprite-twitter-out-y: 0px;
+$sprite-twitter-out-offset-x: -384px;
+$sprite-twitter-out-offset-y: 0px;
+$sprite-twitter-out-width: 128px;
+$sprite-twitter-out-height: 128px;
+$sprite-twitter-out-total-width: 512px;
+$sprite-twitter-out-total-height: 384px;
+$sprite-twitter-out-image: 'dist/images/sprite.png';
+$sprite-twitter-out: (384px, 0px, -384px, 0px, 128px, 128px, 512px, 384px, 'dist/images/sprite.png', 'sprite-twitter_out', );
+$sprite-twitter-over-name: 'sprite-twitter_over';
+$sprite-twitter-over-x: 384px;
+$sprite-twitter-over-y: 128px;
+$sprite-twitter-over-offset-x: -384px;
+$sprite-twitter-over-offset-y: -128px;
+$sprite-twitter-over-width: 128px;
+$sprite-twitter-over-height: 128px;
+$sprite-twitter-over-total-width: 512px;
+$sprite-twitter-over-total-height: 384px;
+$sprite-twitter-over-image: 'dist/images/sprite.png';
+$sprite-twitter-over: (384px, 128px, -384px, -128px, 128px, 128px, 512px, 384px, 'dist/images/sprite.png', 'sprite-twitter_over', );
+$spritesheet-width: 512px;
+$spritesheet-height: 384px;
+$spritesheet-image: 'dist/images/sprite.png';
+$spritesheet-sprites: ($sprite-fb-out, $sprite-fb-over, $sprite-github-out, $sprite-github-over, $sprite-github-over2, $sprite-instagram-out, $sprite-instagram-over, $sprite-line-out, $sprite-line-over, $sprite-twitter-out, $sprite-twitter-over, );
+$spritesheet: (512px, 384px, 'dist/images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+i {
+    display: block;
+    @include sprite($sprite-cat);
+}

@@ -9,4 +9,9 @@ npm install css-declaration-sorter --save-dev
 
 // メディアクエリごとにcssをまとめるためのパッケージ
 // gulp-combine-media-queries
-npm install gulp-combine-media-queries
+npm install gulp-merge-media-queries --save-dev
+
+
+// スプライト画像作成用
+// gulp.spritesmithをインストール
+npm install gulp.spritesmith --save-dev
