@@ -1,0 +1,12 @@
+//gulpプラグイン　インストールコマンド一覧
+
+// ベンダープレフィックスを自動でつける
+// gulp-autoprefixerのインストール
+npm i -D gulp gulp-postcss autoprefixer
+
+// CSSプロパティを並び替える
+npm install css-declaration-sorter --save-dev
+
+// メディアクエリごとにcssをまとめるためのパッケージ
+// gulp-combine-media-queries
+npm install gulp-combine-media-queries
