@@ -17,6 +17,10 @@ const mmq = require('gulp-merge-media-queries');
 //スプライト画像用プラグイン
 const spritesmith = require('gulp.spritesmith');
 
+// 圧縮率を高めるのにプラグインを入れる
+const imagemin = require('gulp-imagemin');
+const imageminPng = require('imagemin-pngquant');
+const imageminGif = require('imagemin-gifsicle');
 
 
 // gulp scssで行われるタスク
@@ -68,7 +72,19 @@ gulp.task('sprite', () => {
     .pipe(gulp.dest('src/sass'));       // cssName で指定した CSS テンプレートの保存先
 });
 
-
+// gulp imagemin で行われるタスク
+gulp.task('imagemin', function () {
+  gulp.src('img/*.{jpg,jpeg,png,gif,svg}')
+    .pipe(imagemin(
+      [
+        pngquant({ quality: '65-80', speed: 1 }),
+        mozjpeg({ quality: 80 }),
+        imagemin.svgo(),
+        imagemin.gifsicle()
+      ]
+    ))
+    .pipe(gulp.dest('img/min'));
+});
 
 /// npx gulp コマンドで動かすもの ////////////////////////////////////////////
 gulp.task('default', gulp.task('scss'));

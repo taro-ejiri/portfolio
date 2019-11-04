@@ -11,7 +11,12 @@ npm install css-declaration-sorter --save-dev
 // gulp-combine-media-queries
 npm install gulp-merge-media-queries --save-dev
 
-
 // スプライト画像作成用
 // gulp.spritesmithをインストール
 npm install gulp.spritesmith --save-dev
+
+// 画像圧縮
+npm install --save-dev gulp-imagemin
+npm install --save imagemin-jpeg-recompress
+npm install imagemin-pngquant
+npm install imagemin-gifsicle
