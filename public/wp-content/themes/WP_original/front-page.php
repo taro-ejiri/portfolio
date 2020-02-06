@@ -81,16 +81,19 @@
 			</div>
 			<div class="slider_frame">
 				<ul class="slider center-item">
+					<li><a href="/works/selfu/"><img src="<?php bloginfo('template_url'); ?>/img/works/selfu.jpg" alt="株式会社Showcase Gig"></a></li>
+					<li><a href="/works/onepi/"><img src="<?php bloginfo('template_url'); ?>/img/works/onepi.jpg" alt="株式会社DeNA Games Tokyo"></a></li>
+					<li><a href="/works/pawa_app_fes/"><img src="<?php bloginfo('template_url'); ?>/img/works/pawapro.jpg" alt="株式会社コナミデジタルエンタテインメント"></a></li>
 					<li><a href="/works/startia/"><img src="<?php bloginfo('template_url'); ?>/img/works/startia.jpg" alt="スターティア株式会社"></a></li>
 					<li><a href="/works/airregi/"><img src="<?php bloginfo('template_url'); ?>/img/works/airregi.jpg" alt="AIRREGI"></a></li>
 					<li><a href="/works/asp/"><img src="<?php bloginfo('template_url'); ?>/img/works/asp.jpg" alt="ビックカメラ　Apple製品正規修理サービス"></a></li>
 					<li><a href="/works/selen/"><img src="<?php bloginfo('template_url'); ?>/img/works/selen.jpg" alt="株式会社SELEN"></a></li>
 					<li><a href="/works/mac_upgrade/"><img src="<?php bloginfo('template_url'); ?>/img/works/mac_upgrade.jpg" alt="Macアップグレードプログラム"></a></li>
 					<li><a href="/works/chubo/"><img src="<?php bloginfo('template_url'); ?>/img/works/chubo.jpg" alt="業務用厨房用品"></a></li>
-					<li><a href="/works/auplus/"><img src="<?php bloginfo('template_url'); ?>/img/works/au_faq.jpg" alt="Auプラス"></a></li>
+					<!--li><a href="/works/auplus/"><img src="<?php bloginfo('template_url'); ?>/img/works/au_faq.jpg" alt="Auプラス"></a></li>
 					<li><a href="/works/nttcom/"><img src="<?php bloginfo('template_url'); ?>/img/works/ntt.jpg" alt="NTTコミュニケーションズ"></a></li>
 					<li><a href="/works/members-mobile/"><img src="<?php bloginfo('template_url'); ?>/img/works/members-mobile.jpg" alt="メンバーズモバイル"></a></li>
-					<li><a href="/works/uchida/"><img src="<?php bloginfo('template_url'); ?>/img/works/uchida.jpg" alt="NTTコミュニケーションズ"></a></li>
+					<li><a href="/works/uchida/"><img src="<?php bloginfo('template_url'); ?>/img/works/uchida.jpg" alt="NTTコミュニケーションズ"></a></li-->
 				</ul>
 			</div>
 		</div>
