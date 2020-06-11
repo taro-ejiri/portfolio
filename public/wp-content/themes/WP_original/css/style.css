@@ -13,6 +13,7 @@ Text Domain: WP_original
 ----------------------------------------------------------------
 1.0  Reset
 2.0  base
+2.5  mixin
 3.0  Layout
     3.1 header
     3.2 navi
@@ -20,25 +21,21 @@ Text Domain: WP_original
     3.4 Contents / page.php
     3.5 Page: 404
     3.6 front-page
-    
+        3.6.1 jumbotron
+        3.6.2 PRINCIPLE and WORKS / About me
+        3.6.3 PRINCIPLE
+        3.6.4 WORKS
+    3.7 About
+        3.7.1 略歴
+        3.7.2 Policy
+    3.8 contact
+    3.9 thanks
+    3.10 archive アーカイブ
+        3.10.1 archive-works
+    3.11 single
+        3.11.1 single-works
 
 
-6.0 mixin
-
-
-
-4.0 　Structure 構造
-5.0 　Contents
-5.1 Page: 404
-5.2 front-page
-5.2.1 jumbotron
-5.3 About
-5.4 contact
-5.5 thanks
-6.0 archive アーカイブ
-6.1 archive-works
-7.0 single 
-7.1 single-works
 8.0 Elements 要素
 8.1 Back to top button
 9.0  Widgets ウィジェット
@@ -708,6 +705,21 @@ header {
   position: fixed;
   width: 100%;
   z-index: 999;
+  /* fixed 下にスライドする際のヘッダーの動き */
+  /*
+    .fixed {
+        background-color: rgba(255, 255, 255, 0);
+
+        .header-content {
+            border-bottom: 0;
+            padding: 25px 10%;
+        }
+
+        .nav-toggle {
+            top: 18px;
+        }
+    }
+*/
 }
 
 header li:hover {
@@ -735,33 +747,19 @@ header .logo_sm h1 {
   margin-top: 0;
 }
 
-/* fixed 下にスライドする際のヘッダーの動き */
-header.fixed {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-header.fixed .header-content {
-  border-bottom: 0;
-  padding: 25px 10%;
-}
-
-header.fixed .nav-toggle {
-  top: 18px;
-}
-
 /*------------------------------
 3.2 navi
 ------------------------------*/
 /* navi */
+.navigation {
+  float: right;
+}
+
 .navigation.open {
   opacity: 0.9;
   visibility: visible;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
-}
-
-.navigation {
-  float: right;
 }
 
 .navigation li {
@@ -776,12 +774,12 @@ header.fixed .nav-toggle {
   letter-spacing: -1px;
 }
 
-.navigation a:hover,
-.navigation a.active {
+.navigation a:hover, .navigation a.active {
   color: #000;
   text-decoration: none;
 }
 
+/* hamburger button */
 .nav-toggle {
   display: none;
   height: 44px;
@@ -915,9 +913,7 @@ ul.h_share_btn {
 @media screen and (max-width: 1024px) {
   header .header-content {
     width: 90%;
-  }
-  header .header-content {
-    padding: 30px 0;
+    padding: 10px 0;
   }
   header.fixed .header-content {
     padding: 17px 0;
@@ -971,7 +967,7 @@ ul.h_share_btn {
 ------------------------------*/
 @media screen and (max-width: 768px) {
   header .header-content {
-    padding: 30px 0%;
+    padding: 10px 0%;
   }
   header.fixed .header-content {
     padding: 17px 0;
@@ -1602,7 +1598,7 @@ h3.point-title {
   }
 }
 
-/*3.7.2 Policy
+/* 3.7.2 Policy
 ------------------------------*/
 #Policy,
 #smartphone {
