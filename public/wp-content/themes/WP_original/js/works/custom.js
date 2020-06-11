@@ -24,7 +24,6 @@ $(document).ready(function(){
 			opacity:0
 		},200);
 		$('.navbar-wrapper').addClass('default-menu');
-		
 	}	
 	
 	$('#nav-show').click(function(x){
@@ -42,15 +41,11 @@ $(document).ready(function(){
 		$('.navbar-wrapper').animate({
 			opacity:0
 		},50,function(){$('.navbar-wrapper').addClass('default-menu');});
-		
 		$('#nav-show').fadeIn();
-	});
-	
-	
+	});	
 });	
 
 
-	
 /*===========================================================*/
 	/*	Preloader 
 /*===========================================================*/	
@@ -102,8 +97,6 @@ $(window).load(function(){
          return false;
     }); 
 
-
-
 // for portfoli lightbox jquary
 jQuery(function() {
 	var $chosenSheet,
@@ -114,24 +107,6 @@ jQuery(function() {
 	$( ".lb_title-overwritten" ).rlightbox({overwriteTitle: true});
 });
 });
-
-// Somth page scroll
-
-//		$(function() {
-//		  $('a[href*=#]:not([href=#])').click(function() {
-//		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//		      var target = $(this.hash);
-//		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//		      if (target.length) {
-//		        $('html,body').animate({
-//		          scrollTop: target.offset().top -16
-//		        }, 1000);
-//		        return false;
-//		      }
-//		    }
-//		  });
-//		});
-
 
 // Testimonial slider
 $(window).load(function(){
@@ -148,7 +123,6 @@ $(window).load(function(){
   });
 });
 
-
 // we worked slider
 $(window).load(function(){
       $('.worklogo').flexslider({
@@ -161,6 +135,5 @@ $(window).load(function(){
     });
 
 // Skill set 
-
 
 }(jQuery));

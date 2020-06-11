@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no"><!-- 電話番号の自動リンク機能を無効化する -->
 <meta http-equiv="Content-Script-Type" content="text/javascript">
-  <!-- SEO -->
+<!-- SEO -->
 <!--
 <?php
 if(is_front_page()): ?>
@@ -16,17 +16,17 @@ if(is_front_page()): ?>
 <meta name="keywords" content="web制作,webデザイナー,コーダー,東京,板橋区,">
 <meta name="description" content="taro ejiriのポートフォリオサイトです。これまで制作してきたWEBサイトについて、また制作する際の概要についてご紹介いたします。">
 <meta name="author" content="taro ejiri">
-<link rel="canonical" href="http://portfolio.sept11.site/">
+<link rel="canonical" href="http://portfolio.sept11.work/">
 <!-- OGP -->
 <meta property="og:site_name" content="ET ウェブデザイン portfolio">
 <meta property="og:title" content=""><!-- ogpのタイトル. <title>と文章も文字数も同じにする。 -->
 <meta property="og:description" content="ejiriのポートフォリオサイトです。これまで制作してきたWEBサイトについて、また制作する際の概要についてご紹介いたします。"><!-- ogpの本文。<meta name='description'>と同じにする。 -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://portfolio.sept11.site/"><!-- サイトのURL貼る -->
+<meta property="og:url" content="http://portfolio.sept11.work/"><!-- サイトのURL貼る -->
 <meta property="og:image" content=""><!-- ogpのURL貼る -->
 <meta property="fb:app_id" content="" /><!-- App-ID（15文字の半角数字） -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="http://portfolio.sept11.site/"><!-- サイトのURL貼る -->
+<meta name="twitter:site" content="http://portfolio.sept11.work/"><!-- サイトのURL貼る -->
 <meta name="twitter:image" content=""><!-- ogpのURL貼る -->
 <!-- favicon -->
 <link rel="icon" type="image/x-icon" href="デフォルト">
@@ -46,9 +46,7 @@ if(is_front_page()): ?>
 <?php endif; ?>
 
 <!-- Bootstrap CSS -->
-
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
 
 <style>
 body::after {
@@ -104,8 +102,8 @@ body.fadeout article {
 	"@context": "http://schema.org",
 	"@type": "Organization",
 	"name": "TARO EJIRI",
-	"url": "http://portfolio.sept11.site/",
-	"logo": "http://portfolio.sept11.site/img/ogp_top.png"
+	"url": "http://portfolio.sept11.work/",
+	"logo": "http://portfolio.sept11.work/img/ogp_top.png"
   }
 </script>
 <?php wp_head(); ?><!--システム・プラグイン用-->
