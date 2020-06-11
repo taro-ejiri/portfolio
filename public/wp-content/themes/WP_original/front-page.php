@@ -30,7 +30,7 @@
 <section class="principle">
 	<div class="container">
 		<div class="section-title">
-			<h2>PRINCIPLE<br><span class="global-ttl_url">方針・コンセプト</span></h2>
+			<h2>PRINCIPLE<br><span>方針・コンセプト</span></h2>
 		</div>
 		<div class="col_3">
 			<div class="items_three">
@@ -70,13 +70,13 @@
 
 <section class="portfolio">
 	<div class="container">
-<div class="section-title">
-<h2>WORKS<br><span class="global-ttl_url">実績</span></h2>
-<p>
-これまでコーポレートサイト、キャンペーンページの制作に携わってまいりました。今ではレスポンシブ対応が必須であり、最近携わったサイトは全てレスポンシブ対応しております。<br>
-SNSとの連動、GAでのサイト閲覧者の把握、それに伴ったSEO対策、改修など、サイト制作するにあたりこれらを義務付けし、顧客獲得に取り組みたいと考えております。
-</p>
-</div>
+		<div class="section-title">
+			<h2>WORKS<br><span>実績</span></h2>
+			<p>
+				これまでコーポレートサイト、キャンペーンページの制作に携わってまいりました。今ではレスポンシブ対応が必須であり、最近携わったサイトは全てレスポンシブ対応しております。<br>
+				SNSとの連動、GAでのサイト閲覧者の把握、それに伴ったSEO対策、改修など、サイト制作するにあたりこれらを義務付けし、顧客獲得に取り組みたいと考えております。
+			</p>
+		</div>
 		<div class="slider_frame">
 			<ul class="slider center-item">
 				<li><a href="/works/selfu/"><img src="<?php bloginfo('template_url'); ?>/img/works/selfu.jpg"

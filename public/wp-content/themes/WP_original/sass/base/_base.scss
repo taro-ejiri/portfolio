@@ -58,17 +58,17 @@ a {
     color: #ffffff;
     background: #a9a9b1;
     z-index: 3;
-}
 
-#pagetop.v-enter,
-#pagetop.v-leave-to {
-    opacity: 0;
-    bottom: 10px;
-}
+    &.v-enter,
+    &.v-leave-to {
+        opacity: 0;
+        bottom: 10px;
+    }
 
-#pagetop i {
-    margin-top: 15px;
-    font-size: 28px;
+    i {
+        margin-top: 15px;
+        font-size: 28px;
+    }
 }
 
 /*------------------------------
