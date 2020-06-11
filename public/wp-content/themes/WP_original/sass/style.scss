@@ -1,111 +1,52 @@
-// ネストのテスト
-div {
-  p {
-    font-weight: bold;
-  }
-}
-// 変数のテスト
-$fontColor: #525252;
-$fontColor-h2: hsl(0, 76%, 52%);
+@charset "UTF-8";
+/*
+Theme Name: WP_original
+Theme URI: http://portfolio.sept11.work/
+Author: ET ウェブデザイン
+Author URI: http: //portfolio.sept11.work/
+Description: ETのポートフォリオサイトです。
+Version: 2.0
+Text Domain: WP_original
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0  Reset
+2.0  base
+2.5  mixin
+3.0  Layout
+    3.1 header
+    3.2 navi
+    3.3 footer
+    3.4 Contents / page.php
+    3.5 Page: 404
+    3.6 front-page
+        3.6.1 jumbotron
+        3.6.2 PRINCIPLE and WORKS / About me
+        3.6.3 PRINCIPLE
+        3.6.4 WORKS
+    3.7 About
+        3.7.1 略歴
+        3.7.2 Policy
+    3.8 contact
+    3.9 thanks
+    3.10 archive アーカイブ
+        3.10.1 archive-works
+    3.11 single
+        3.11.1 single-works
 
-h1 {
-  color: $fontColor;
-}
-h2 {
-  color: $fontColor-h2;
-}
-main {
-  max-width: 1000px;
-  padding: 15px;
-  text-align: center;
-  border-radius: 5px;
-  display: flex;
-  font-size: 1.5rem
-}
 
+8.0 Elements 要素
+8.1 Back to top button
+9.0  Widgets ウィジェット
+10.0  Sections
+11.0  External Plugins
+--------------------------------------------------------------*/
 
-@media screen and (max-width: 414px) {
-	#area404 { 
-		padding-top: 100px; 
-		min-height: 525px;
-	}
-	#area404 h2{ 
-		font-size: 25px;
-		padding: 0 10px; 
-	}
-
-}
-@media only screen and (max-width:414px){
-	.point-frame{
-		width: 100%; 
-		float: none;
-	}
-	.point-description{
-		width: 100%;
-	}
-}
-
-@media screen and (max-width: 414px) {
-	#area404 p{ 
-		font-size: 16px;
-	}
-}
-
-@media screen and (max-width: 375px) {
-	#area404 { 
-		padding-top: 100px;
-		min-height: 450px;
-	}
-}
-
-@media screen and (max-width: 320px) {
-	#area404 { 
-		min-height: 300px;
-		margin-top: 90px; 
-		padding-top: 50px;
-	}
-	#area404 h2{ 
-		font-size: 20px;
-		margin-bottom: 30px;
-	}
-	#area404 p{
-		margin-bottom: 0;
-	}
-}
-
-@media only screen and (max-width:768px){
-	.principle .items_three{ 
-		position: relative; 
-		width: 100%; 
-		min-height: 1px;
-		padding: 0 0 15px;
-	}
-	.point-frame{ 
-		width: 30%; 
-		float: left;
-	}
-	.point-description{ 
-		width: 70%;
-		float: right;
-		padding: 0;
-	}
-	h3.point-title{ 
-		font-size: 18px; 
-		text-align: center;
-	}
-}
-@media only screen and (max-width:414px){
-	.point-frame{
-		width: 100%; 
-		float: none;
-	}
-	.point-description{
-		width: 100%;
-	}
-}
-
-i {
-    display: block;
-    @include sprite($sprite-cat);
-}
-
+// Include Base Style
+@import "base/base";
+@import "mixin/mixin";
+// Styling Start
+@import "layout/layout";
+//@import "module/module";
+//@import "state/state";

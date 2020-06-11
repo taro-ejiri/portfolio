@@ -32,11 +32,10 @@ if(is_front_page()): ?>
 <link rel="icon" type="image/x-icon" href="デフォルト">
 
 <!-- CSS -->
-<!-- style.css-->
-<link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet" type="text/css">
 <!-- font-awesome -->
 <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-
+<!-- style.css-->
+<link href="<?php bloginfo('template_url'); ?>/css/style.min.css" rel="stylesheet" type="text/css">
 <?php // front_page css
 if(is_front_page()): ?>
 <link href="<?php bloginfo('template_url'); ?>/css/flexslider.css" rel="stylesheet">
