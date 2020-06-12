@@ -1,0 +1,307 @@
+/*------------------------------
+3.7 About
+------------------------------*/
+.about_frame {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .about_frame {
+        width: 100%;
+    }
+}
+
+#About p {
+    font-size: 14px;
+}
+
+/* 3.7.1 略歴
+------------------------------*/
+#Bio {
+    h2 {
+        &.top {
+            color: #000;
+            display: block;
+            font-size: 45px;
+            font-style: normal;
+            letter-spacing: -3px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+
+    h3 {
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, "Arial",
+            "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
+            sans-serif;
+        font-weight: 300;
+        line-height: 1.2;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22.4px;
+        color: #6c7279;
+        margin-bottom: 15px;
+    }
+
+    .dl-horizontal {
+        border-bottom: 1px rgba(200, 200, 200, 0.5) dashed;
+
+        dt {
+            padding: 1.1em 1em 1em 1em;
+            line-height: 1.6;
+            font-size: 15px;
+            font-weight: 500;
+            margin-right: 0px;
+            border-top: 1px rgba(200, 200, 200, 0.5) dashed;
+        }
+
+        dd {
+            padding: 1.1em 1em 1em 10em;
+            font-size: 15px;
+            line-height: 1.6;
+            border-top: 1px rgba(200, 200, 200, 0.5) dashed;
+            margin-left: 110px;
+        }
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    #About h3 {
+        font-size: 24px;
+        letter-spacing: -1px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #About {
+        .dl-horizontal {
+            border-bottom: 0px rgba(200, 200, 200, 0.5) dashed;
+
+            dt {
+                padding: 1.5em 0 0.3em;
+                border-top: 0;
+                border-bottom: 1px #ddd solid;
+                border-top: 0px rgba(200, 200, 200, 0.5) dashed;
+                margin-left: 0px;
+            }
+
+            dd {
+                padding: 0.3em 0em 0em 0em;
+                border-top: 0px rgba(200, 200, 200, 0.5) dashed;
+                margin-left: 0px;
+            }
+        }
+
+        ul {
+            padding-left: 10px;
+        }
+    }
+}
+
+/* 3.7.2 Policy
+------------------------------*/
+#Policy,
+#smartphone {
+    padding: 70px 0;
+}
+
+#Policy .frame,
+#smartphone .frame {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#Policy p,
+#smartphone p {
+    font-size: 14px;
+    line-height: 22.4px;
+    color: #6c7279;
+    margin: 0 0 10px;
+}
+
+.aboutUs {
+    h3 {
+        position: relative;
+        display: block;
+        margin: 50px 0 30px;
+        font-size: 24px;
+        line-height: 1.6;
+        letter-spacing: 0.12em;
+        font-weight: 200;
+        text-align: center;
+        pointer-events: none;
+        padding-top: 10px;
+    }
+
+    h4 {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    li {
+        background: none;
+        padding-left: 1.8em;
+        margin-bottom: 10px;
+        line-height: 1.7;
+        font-size: 14px;
+        position: relative;
+        padding-left: 2em;
+        margin: 0 0 0.8em;
+        font-size: 15px;
+        line-height: 2;
+        font-weight: 300;
+        line-height: 1.75;
+    }
+}
+
+#Policy {
+
+    .dl-horizontal {
+        dt {
+            padding: 2em 1em 1em 1em;
+            line-height: 1.6;
+            font-size: 15px;
+            font-weight: 500;
+            margin-right: 0px;
+            border-top: 1px rgba(200, 200, 200, 0.5) solid;
+        }
+
+        dd {
+            padding: 1em 1em 1em 10em;
+            font-size: 15px;
+            line-height: 1.6;
+            border-top: 1px rgba(200, 200, 200, 0.5) solid;
+            margin-left: 40px;
+        }
+    }
+
+    li {
+        list-style: disc;
+        color: #000;
+    }
+
+    dl {
+        color: #000;
+    }
+
+    ul.environment li {
+        list-style: none;
+
+        dl {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        dt {
+            font-weight: normal;
+        }
+
+        dd:after {
+            content: "/";
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+
+        dd:last-child:after {
+            content: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 699px) {
+
+    #Policy .section-title,
+    #smartphone .section-title {
+        margin-top: 50px;
+    }
+
+    #Policy .section-title h2,
+    #Policy .section-title,
+    #smartphone .section-title h2 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: 35px;
+    }
+
+    .aboutUs {
+        h3 {
+            padding: 25px 0 0;
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
+        li {
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #Policy {
+        .dl-horizontal {
+            dt {
+                padding: 1.5em 0 0.3em;
+                border-top: 0;
+                margin-left: 0px;
+            }
+
+            dd {
+                padding: 0.3em 0em 0em 1.5em;
+                margin-left: 0px;
+            }
+        }
+
+        ul {
+            padding-left: 10px;
+
+            &.environment {
+                padding-left: 0;
+
+                li {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    #Policy ul.browser,
+    #smartphone ul.browser {
+        padding-left: 30px;
+    }
+
+    #Policy ul.environment li dt {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    #Policy,
+    #smartphone {
+        padding: 10px 0;
+    }
+
+    #Policy .frame,
+    #smartphone .frame {
+        width: 100%;
+    }
+}

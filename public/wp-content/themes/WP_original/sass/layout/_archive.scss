@@ -1,0 +1,445 @@
+/*------------------------------
+3.10 archive アーカイブ
+------------------------------*/
+/*------------------------------
+3.10.1 archive-works
+------------------------------*/
+/* section ID WORK List
+------------------------------*/
+#work-list {
+    h2 {
+        &.top {
+            color: #000;
+            display: block;
+            font-size: 45px;
+            font-style: normal;
+            letter-spacing: -3px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 30px;
+        color: #5b4c5c;
+        font-weight: 300;
+        text-transform: none;
+        letter-spacing: 1px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 23px;
+        letter-spacing: 0.2px;
+        color: #444444;
+    }
+
+    /* WORK List menuFrame */
+    .menuFrame {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+
+        ul {
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+            margin-bottom: 60px;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 -2px;
+
+            &:after {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 10px;
+                background: #938b94;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -5px;
+            }
+
+            &.last:after {
+                background: #fff;
+            }
+
+            a {
+                padding: 16px 30px;
+                font-size: 11px;
+                line-height: 15px;
+                font-weight: bold;
+                color: #6f6470;
+                text-transform: uppercase;
+                display: block;
+                text-decoration: none;
+                border-right: none;
+                letter-spacing: 2px;
+                transition-duration: 0.2s;
+                -webkit-transition-duration: 0.2s;
+
+                &:hover {
+                    border-color: #cfcfcf;
+                    color: #000;
+                    transition-duration: 0.2s;
+                    -webkit-transition-duration: 0.2s;
+                }
+
+                &.current {
+                    border: solid 1px #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 699px) {
+    #work-list h3 {
+        padding-bottom: 35px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #work-list .menuFrame ul {
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+}
+
+/* WORK List Container 
+------------------------------*/
+#work-list ul.menuContainer {
+    display: block;
+    padding: 0px;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menuContainer {
+        width: 100%;
+    }
+}
+
+#work-list ul.menuContainer li {
+    display: block;
+    height: auto;
+    padding: 10px;
+    margin: 0px;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+#work-list ul.menuContainer li img {
+    width: 100% !important;
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 576px) {
+    .worksFrame {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .worksFrame {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .worksFrame {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+/* WORKリストがソートする際の動き */
+.isotope-item {
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    padding: 0;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+/* WORK List Sections
+------------------------------*/
+#work-list figure {
+    position: relative;
+    overflow: hidden;
+    margin: 0 1px 1px 0;
+    background: #726fb9;
+    text-align: center;
+    cursor: pointer;
+}
+
+#work-list figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#work-list .ot-portfolio-item figure figcaption>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+#work-list .ot-portfolio-item figure figcaption,
+.ot-portfolio-item figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#work-list figure.effect-bubba {
+    background: #000;
+    margin-bottom: 1px;
+}
+
+#work-list figure.effect-bubba img {
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+#work-list figure.effect-bubba:hover img {
+    opacity: 0.4;
+}
+
+#work-list figure.effect-bubba figcaption::before,
+#work-list figure.effect-bubba figcaption::after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    content: "";
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #work-list figure.effect-bubba figcaption::before,
+    #work-list figure.effect-bubba figcaption::after {
+        top: 15px;
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+    }
+}
+
+@media only screen and (max-width: 979px) {
+
+    #work-list figure.effect-bubba figcaption::before,
+    #work-list figure.effect-bubba figcaption::after {
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+
+    #work-list figure.effect-bubba figcaption::before,
+    #work-list figure.effect-bubba figcaption::after {
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+    }
+}
+
+#work-list figure.effect-bubba figcaption::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+#work-list figure.effect-bubba figcaption::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+}
+
+#work-list figure.effect-bubba h2 {
+    opacity: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    padding-top: 25%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+}
+
+#work-list figure.effect-bubba p {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 20px 2.5em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+
+#work-list figure.effect-bubba:hover figcaption::before,
+#work-list figure.effect-bubba:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+#work-list figure.effect-bubba:hover h2,
+#work-list figure.effect-bubba:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#work-list span.small {
+    color: #fff;
+}
+
+#work-list span.new {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: url(../img/works/icon_new.png);
+    width: 46px;
+    height: 46px;
+    text-indent: -9999px;
+}
+
+@media screen and (max-width: 1024px) {
+    #work-list figure.effect-bubba h2 {
+        padding-top: 23%;
+        font-size: 25px;
+    }
+
+    #work-list span.new {
+        position: absolute;
+        top: 28px;
+        left: 28px;
+        background: url(../img/works/icon_new.png);
+        width: 46px;
+        height: 46px;
+        text-indent: -9999px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #work-list figure.effect-bubba h2 {
+        padding-top: 20%;
+        font-size: 18px;
+    }
+
+    #work-list span.new {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background: url(../img/works/icon_new.png);
+        width: 46px;
+        height: 46px;
+        text-indent: -9999px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #work-list figure.effect-bubba h2 {
+        padding-top: 25%;
+        font-size: 18px;
+    }
+
+    #work-list span.new {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: url(../img/works/icon_new.png);
+        width: 46px;
+        height: 46px;
+        text-indent: -9999px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #work-list figure.effect-bubba h2 {
+        padding-top: 25%;
+        font-size: 16px;
+    }
+}
+
+.client_mini {
+    display: none;
+
+    p {
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .client_mini {
+        display: block;
+        min-height: 50px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .client_mini {
+        min-height: 30px;
+    }
+}

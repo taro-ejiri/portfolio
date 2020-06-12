@@ -1,0 +1,219 @@
+/*------------------------------
+3.8 contact
+------------------------------*/
+#contact {
+    h2 {
+        &.top {
+            color: #000;
+            display: block;
+            font-size: 45px;
+            font-style: normal;
+            letter-spacing: -3px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+
+    .frame {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22.4px;
+        color: #6c7279;
+        margin: 0 0 10px;
+    }
+
+    legend {
+        display: block;
+        width: 100%;
+        padding: 0;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: inherit;
+        color: #333;
+        border: 0;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #contact .frame {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #contact .frame {
+        width: 100%;
+    }
+}
+
+/* メールフォーム注意書き */
+.border-wrap-small {
+    color: #000;
+    border: 1px #766f6c dashed;
+    padding: 1.5em 2.5em 0;
+    margin: 2em 0;
+
+    li {
+        list-style-type: disc;
+        font-size: 15px;
+        color: #555;
+        padding-bottom: 10px;
+    }
+}
+
+.asterisk {
+    margin: 0 0 0 0.2em;
+    color: #f00;
+}
+
+@media only screen and (max-width: 768px) {
+    .border-wrap-small {
+        padding: 15px 10px 15px 0;
+    }
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="url"],
+.wpcf7 select,
+.wpcf7 textarea {
+    background-color: #fff;
+    color: #333;
+    width: 95%;
+    border: 1px solid #ddd;
+    font-size: 100%;
+    padding: 0.5em;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* 「送信」ボタン */
+.wpcf7 input[type="submit"] {
+    padding: 15px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #2097a8;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #216973;
+}
+
+.wpcf7 input[type="submit"]:active {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+
+.wpcf7 span.wpcf7-not-valid-tip {
+    font-size: 80%;
+}
+
+.submitFrame {
+    text-align: center;
+}
+
+/* エラーメッセージ */
+span.wpcf7-not-valid-tip,
+.wpcf7-response-output.wpcf7-validation-errors {
+    color: red;
+    font-weight: 600;
+}
+
+/* 入力内容に問題があります。確認して再度お試しください。 */
+.wpcf7-response-output.wpcf7-validation-errors {
+    width: 80%;
+    margin: 0 auto;
+    border-style: none;
+    padding: 15px;
+    font-size: 16px;
+    color: #f00;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .wpcf7-response-output.wpcf7-validation-errors {
+        width: 100%;
+        font-size: 14px;
+        padding: 15px 0;
+        text-align: left;
+    }
+}
+
+/*------------------------------
+3.9 thanks
+------------------------------*/
+#thanks {
+    width: 65%;
+    margin: 0 auto;
+    min-height: 600px;
+
+    h2 {
+        font-size: 25px;
+        line-height: 150%;
+        padding: 15px;
+    }
+}
+
+.thanks_text {
+    padding: 15px;
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.topReturn {
+    text-align: center;
+    margin-top: 50px;
+
+    a {
+        padding: 15px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #2097a8;
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+
+        &:before {
+            font-family: FontAwesome;
+            content: "\f0da";
+            font-weight: normal;
+            padding-right: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #thanks {
+        width: 90%;
+        margin: 0 auto;
+        min-height: 630px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #thanks {
+        width: 100%;
+        margin: 0 auto;
+        min-height: auto;
+    }
+}

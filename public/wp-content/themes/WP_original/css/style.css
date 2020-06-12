@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*
 Theme Name: WP_original
 Theme URI: http://portfolio.sept11.work/
@@ -54,13 +53,13 @@ Text Domain: WP_original
    ========================================================================== */
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ::before,
 ::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 /* Document
@@ -150,7 +149,7 @@ dd {
  */
 hr {
   -webkit-box-sizing: content-box;
-  box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -199,7 +198,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -281,7 +280,7 @@ select,
 textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+       appearance: none;
   vertical-align: middle;
   color: inherit;
   font: inherit;
@@ -298,14 +297,14 @@ textarea {
   /* 1 */
   -webkit-appearance: checkbox;
   -moz-appearance: checkbox;
-  appearance: checkbox;
+       appearance: checkbox;
 }
 
 [type="radio"] {
   /* 1 */
   -webkit-appearance: radio;
   -moz-appearance: radio;
-  appearance: radio;
+       appearance: radio;
 }
 
 /**
@@ -338,7 +337,7 @@ button,
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+       appearance: none;
 }
 
 button[disabled],
@@ -526,7 +525,7 @@ template {
 /*--------------------------------------------------------------
 2.0 base
 ----------------------------------------------------------------*/
-/* 2.1 Links リンク
+/* 2.1 Links
 ------------------------------*/
 a {
   text-decoration: none;
@@ -544,17 +543,17 @@ a {
   display: -ms-flexbox;
   /* IE10 */
   -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+          flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   /* IE10 */
 }
 
-.col_3>div {
+.col_3 > div {
   width: 33.33333%;
 }
 
 @media screen and (max-width: 960px) {
-  .col_3>div {
+  .col_3 > div {
     width: 100%;
   }
 }
@@ -578,7 +577,7 @@ a {
   cursor: pointer;
   background: #fff;
   -webkit-box-shadow: 0 0 4px 0px #555;
-  box-shadow: 0 0 4px 0px #555;
+          box-shadow: 0 0 4px 0px #555;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
   text-align: center;
@@ -587,8 +586,7 @@ a {
   z-index: 3;
 }
 
-#pagetop.v-enter,
-#pagetop.v-leave-to {
+#pagetop.v-enter, #pagetop.v-leave-to {
   opacity: 0;
   bottom: 10px;
 }
@@ -622,32 +620,6 @@ a {
   -webkit-transform: translate(0, 0);
 }
 
-/*--------------------------------------------------------------
-9.0 Widgets ウィジェット
---------------------------------------------------------------*/
-/* Recent Categories, Archive, Meta
-------------------------------*/
-/*--------------------------------------------------------------
-10.0 Sections セクション
---------------------------------------------------------------*/
-/* Section Stuffs
-------------------------------*/
-/* Section: Hero
-------------------------------*/
-/* Hero Text Style1. */
-/* Section: About Us
-------------------------------*/
-/* Section: Counter
-------------------------------*/
-/* Section: Team
-------------------------------*/
-/* Section: News
-------------------------------*/
-/* Section: Contact
-------------------------------*/
-/*--------------------------------------------------------------
-11.0 External Plugins 外部プラグイン
---------------------------------------------------------------*/
 /*--------------------------------------------------------------
 6.0 mixin
 ----------------------------------------------------------------*/
@@ -694,8 +666,8 @@ a {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 100vh;
 }
 
@@ -775,8 +747,7 @@ header .logo_sm h1 {
   letter-spacing: -1px;
 }
 
-.navigation a:hover,
-.navigation a.active {
+.navigation a:hover, .navigation a.active {
   color: #000;
   text-decoration: none;
 }
@@ -917,15 +888,12 @@ ul.h_share_btn {
     width: 90%;
     padding: 10px 0;
   }
-
   header.fixed .header-content {
     padding: 17px 0;
   }
-
   .nav-toggle {
     display: block;
   }
-
   .navigation {
     position: fixed;
     background-color: #fff;
@@ -939,26 +907,22 @@ ul.h_share_btn {
     -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
     transition: opacity 0.5s, visibility 0s 0.5s;
   }
-
   .navigation .primary-nav {
     position: relative;
     top: 45%;
     -webkit-transform: translateY(-45%);
     transform: translateY(-45%);
   }
-
   .navigation li {
     display: block;
     margin-bottom: 20px;
   }
-
   .navigation a {
     display: block;
     font-size: 35px;
     margin: 0;
     text-align: center;
   }
-
   /* ヘッダー用 shareボタン */
   ul.h_share_btn {
     display: block;
@@ -966,7 +930,6 @@ ul.h_share_btn {
     text-align: center;
     padding-left: 0;
   }
-
   ul.h_share_btn li {
     display: inline-block;
     padding: 0 15px;
@@ -979,11 +942,9 @@ ul.h_share_btn {
   header .header-content {
     padding: 10px 0%;
   }
-
   header.fixed .header-content {
     padding: 17px 0;
   }
-
   .navigation .primary-nav {
     padding-left: 0px;
   }
@@ -995,7 +956,6 @@ ul.h_share_btn {
   header .header-content {
     padding: 30px 0;
   }
-
   header.fixed .header-content {
     padding: 17px 0;
   }
@@ -1007,15 +967,12 @@ ul.h_share_btn {
   header .header-content {
     padding: 30px 0;
   }
-
   header.fixed .header-content {
     padding: 17px 0;
   }
-
   header .logo_pc {
     display: none;
   }
-
   header .logo_sm {
     display: block;
   }
@@ -1034,7 +991,6 @@ ul.h_share_btn {
   header .header-content {
     padding: 30px 2%;
   }
-
   header.fixed .header-content {
     padding: 17px 0;
   }
@@ -1110,12 +1066,10 @@ footer .cp_right {
     padding-top: 300px;
     min-height: 1100px;
   }
-
   #area404 h2 {
     font-size: 45px;
     margin-bottom: 40px;
   }
-
   #area404 p {
     font-size: 25px;
     padding: 30px;
@@ -1129,12 +1083,10 @@ footer .cp_right {
     min-height: 800px;
     margin-top: 65px;
   }
-
   #area404 h2 {
     font-size: 30px;
     margin-bottom: 30px;
   }
-
   #area404 p {
     font-size: 20px;
     padding: 15px;
@@ -1147,12 +1099,10 @@ footer .cp_right {
     padding-top: 100px;
     min-height: 525px;
   }
-
   #area404 h2 {
     font-size: 25px;
     padding: 0 10px;
   }
-
   #area404 p {
     font-size: 16px;
   }
@@ -1173,12 +1123,10 @@ footer .cp_right {
     margin-top: 90px;
     padding-top: 50px;
   }
-
   #area404 h2 {
     font-size: 20px;
     margin-bottom: 30px;
   }
-
   #area404 p {
     margin-bottom: 0;
   }
@@ -1242,7 +1190,6 @@ footer .cp_right {
   #jumbotron .slides_canvas {
     max-width: 95%;
   }
-
   #jumbotron blockquote {
     padding: 25px;
   }
@@ -1256,20 +1203,16 @@ footer .cp_right {
     padding: 10px 10px;
     margin: 100px 0 10px;
   }
-
   #jumbotron blockquote {
     padding: 0px;
     margin-bottom: 0;
   }
-
   #jumbotron blockquote h2 {
     font-size: 25px;
   }
-
   #jumbotron blockquote p {
     font-size: 13px;
   }
-
   #jumbotron .flexslider {
     padding-bottom: 20px;
   }
@@ -1365,7 +1308,7 @@ footer .cp_right {
   position: relative;
   top: 25%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .point-circle.building {
@@ -1405,18 +1348,15 @@ h3.point-title {
     min-height: 1px;
     padding: 0 0 15px;
   }
-
   .point-frame {
     width: 30%;
     float: left;
   }
-
   .point-description {
     width: 70%;
     float: right;
     padding: 0;
   }
-
   h3.point-title {
     font-size: 18px;
     text-align: center;
@@ -1428,7 +1368,6 @@ h3.point-title {
     width: 100%;
     float: none;
   }
-
   .point-description {
     width: 100%;
   }
@@ -1499,20 +1438,16 @@ h3.point-title {
   .portfolio {
     margin-top: 30px;
   }
-
   .portfolio p {
     margin: 20px 30px 60px;
   }
-
   .portfolio .slider_frame {
     width: 85%;
   }
-
   .center-item .slick-next {
     right: 30px;
     z-index: 99;
   }
-
   .center-item .slick-prev {
     left: 15px;
     z-index: 100;
@@ -1525,11 +1460,9 @@ h3.point-title {
     font-size: 14px;
     line-height: 22.4px;
   }
-
   .portfolio .slider_frame {
     width: 100%;
   }
-
   .portfolio .slick-prev:before,
   .portfolio .slick-next:before {
     font-size: 40px;
@@ -1614,7 +1547,6 @@ h3.point-title {
   #About .dl-horizontal {
     border-bottom: 0px rgba(200, 200, 200, 0.5) dashed;
   }
-
   #About .dl-horizontal dt {
     padding: 1.5em 0 0.3em;
     border-top: 0;
@@ -1622,13 +1554,11 @@ h3.point-title {
     border-top: 0px rgba(200, 200, 200, 0.5) dashed;
     margin-left: 0px;
   }
-
   #About .dl-horizontal dd {
     padding: 0.3em 0em 0em 0em;
     border-top: 0px rgba(200, 200, 200, 0.5) dashed;
     margin-left: 0px;
   }
-
   #About ul {
     padding-left: 10px;
   }
@@ -1725,7 +1655,7 @@ h3.point-title {
   display: flex;
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 #Policy ul.environment li dt {
@@ -1747,12 +1677,10 @@ h3.point-title {
 }
 
 @media only screen and (max-width: 699px) {
-
   #Policy .section-title,
   #smartphone .section-title {
     margin-top: 50px;
   }
-
   #Policy .section-title h2,
   #Policy .section-title,
   #smartphone .section-title h2 {
@@ -1760,17 +1688,14 @@ h3.point-title {
     margin-bottom: 0;
     font-size: 35px;
   }
-
   .aboutUs h3 {
     padding: 25px 0 0;
     font-size: 20px;
     margin: 0 0 10px;
   }
-
   .aboutUs h4 {
     font-size: 18px;
   }
-
   .aboutUs li {
     padding-left: 0.6em;
     padding-right: 0.6em;
@@ -1783,30 +1708,24 @@ h3.point-title {
     border-top: 0;
     margin-left: 0px;
   }
-
   #Policy .dl-horizontal dd {
     padding: 0.3em 0em 0em 1.5em;
     margin-left: 0px;
   }
-
   #Policy ul {
     padding-left: 10px;
   }
-
   #Policy ul.environment {
     padding-left: 0;
   }
-
   #Policy ul.environment li {
     padding-left: 0;
     padding-right: 0;
   }
-
   #Policy ul.browser,
   #smartphone ul.browser {
     padding-left: 30px;
   }
-
   #Policy ul.environment li dt {
     width: 100%;
     padding-bottom: 10px;
@@ -1814,12 +1733,10 @@ h3.point-title {
 }
 
 @media only screen and (max-width: 414px) {
-
   #Policy,
   #smartphone {
     padding: 10px 0;
   }
-
   #Policy .frame,
   #smartphone .frame {
     width: 100%;
@@ -1921,7 +1838,7 @@ h3.point-title {
   padding: 0.5em;
   border-radius: 4px;
   -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 /* 「送信」ボタン */
@@ -1934,7 +1851,7 @@ h3.point-title {
   color: #fff;
   text-decoration: none;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
   border-bottom: solid 3px #216973;
 }
 
@@ -1942,7 +1859,7 @@ h3.point-title {
   -webkit-transform: translateY(3px);
   transform: translateY(3px);
   -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
   border-bottom: none;
 }
 
@@ -2202,7 +2119,7 @@ span.wpcf7-not-valid-tip,
     -ms-flex: 0 0 33.333333%;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
 }
@@ -2212,7 +2129,7 @@ span.wpcf7-not-valid-tip,
     -ms-flex: 0 0 33.333333%;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
 }
@@ -2266,7 +2183,7 @@ span.wpcf7-not-valid-tip,
   height: 100%;
 }
 
-#work-list .ot-portfolio-item figure figcaption>a {
+#work-list .ot-portfolio-item figure figcaption > a {
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
@@ -2275,7 +2192,7 @@ span.wpcf7-not-valid-tip,
 }
 
 #work-list .ot-portfolio-item figure figcaption,
-.ot-portfolio-item figure figcaption>a {
+.ot-portfolio-item figure figcaption > a {
   position: absolute;
   top: 0;
   left: 0;
@@ -2314,7 +2231,6 @@ span.wpcf7-not-valid-tip,
 }
 
 @media only screen and (max-width: 1024px) {
-
   #work-list figure.effect-bubba figcaption::before,
   #work-list figure.effect-bubba figcaption::after {
     top: 15px;
@@ -2325,7 +2241,6 @@ span.wpcf7-not-valid-tip,
 }
 
 @media only screen and (max-width: 979px) {
-
   #work-list figure.effect-bubba figcaption::before,
   #work-list figure.effect-bubba figcaption::after {
     top: 10px;
@@ -2336,7 +2251,6 @@ span.wpcf7-not-valid-tip,
 }
 
 @media only screen and (max-width: 699px) {
-
   #work-list figure.effect-bubba figcaption::before,
   #work-list figure.effect-bubba figcaption::after {
     top: 10px;
@@ -2423,7 +2337,6 @@ span.wpcf7-not-valid-tip,
     padding-top: 23%;
     font-size: 25px;
   }
-
   #work-list span.new {
     position: absolute;
     top: 28px;
@@ -2440,7 +2353,6 @@ span.wpcf7-not-valid-tip,
     padding-top: 20%;
     font-size: 18px;
   }
-
   #work-list span.new {
     position: absolute;
     top: 15px;
@@ -2457,7 +2369,6 @@ span.wpcf7-not-valid-tip,
     padding-top: 25%;
     font-size: 18px;
   }
-
   #work-list span.new {
     position: absolute;
     top: 20px;
@@ -2614,7 +2525,6 @@ span.wpcf7-not-valid-tip,
     margin: 0 auto;
     margin-bottom: 10px;
   }
-
   #Works-content .carousel-caption {
     font-size: 25px;
   }
@@ -2679,8 +2589,34 @@ span.wpcf7-not-valid-tip,
     max-width: 580px;
     margin: 20px auto 0;
   }
-
   #Works-comment .comment {
     margin-bottom: 40px;
   }
 }
+
+/*--------------------------------------------------------------
+9.0 Widgets ウィジェット
+--------------------------------------------------------------*/
+/* Recent Categories, Archive, Meta
+------------------------------*/
+/*--------------------------------------------------------------
+10.0 Sections セクション
+--------------------------------------------------------------*/
+/* Section Stuffs
+------------------------------*/
+/* Section: Hero
+------------------------------*/
+/* Hero Text Style1. */
+/* Section: About Us
+------------------------------*/
+/* Section: Counter
+------------------------------*/
+/* Section: Team
+------------------------------*/
+/* Section: News
+------------------------------*/
+/* Section: Contact
+------------------------------*/
+/*--------------------------------------------------------------
+11.0 External Plugins 外部プラグイン
+--------------------------------------------------------------*/

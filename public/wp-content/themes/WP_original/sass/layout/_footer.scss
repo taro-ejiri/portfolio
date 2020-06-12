@@ -1,0 +1,35 @@
+/*------------------------------
+3.3 footer
+------------------------------*/
+footer {
+    margin-top: auto;
+
+    .f_share_btn {
+        margin-top: 50px;
+        text-align: center;
+
+        ul {
+            padding-left: 0;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 15px;
+        }
+    }
+
+    .cp_right {
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 14px;
+        color: #000;
+        text-transform: uppercase;
+    }
+}
+
+/* iPhone5/SE */
+@media screen and (max-width: 320px) {
+    footer .f_share_btn li {
+        padding: 0 10px;
+    }
+}
