@@ -1,0 +1,191 @@
+/*--------------------------------------------------------------
+3.11 single
+--------------------------------------------------------------*/
+/*------------------------------
+3.11.1 single-works
+------------------------------*/
+/* worksTitle
+------------------------------*/
+#worksTitle {
+    text-align: center !important;
+    padding: 120px 0px 0px;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 1.6;
+        letter-spacing: 0.12em;
+        padding: 0 1px;
+    }
+
+    p {
+        line-height: 1.6;
+        font-family: "Spinnaker", sans-serif;
+        font-weight: 400 !important;
+        letter-spacing: 0.1em;
+        -webkit-font-smoothing: subpixel-antialiased;
+
+        a {
+            color: #262423;
+            text-decoration: none;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .header_cat {
+        font-size: 16px;
+        margin-bottom: 0.5em;
+    }
+
+    .clientName {
+        font-size: 18px;
+        color: #777;
+    }
+
+    .heading-sub-en {
+        margin-top: 5px;
+        font-size: 13px;
+        word-break: break-all;
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (min-width: 699px) {
+    #worksTitle {
+        padding: 180px 80px 20px;
+    }
+}
+
+/* Works-content 
+------------------------------*/
+#Works-content {
+    margin: 10px 0;
+
+    .carousel {
+        width: 100%;
+        margin: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .carousel-caption {
+        font-size: 18px;
+        color: #6c7279;
+        margin-bottom: 30px;
+    }
+
+    .carousel-indicators {
+        li {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+            text-indent: -999px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid #6c7279;
+            border-radius: 20px;
+        }
+
+        .active {
+            width: 31px;
+            height: 31px;
+            margin: 9px;
+            background-color: #6c7279;
+        }
+    }
+}
+
+/* イントラサイトの場合 */
+.intra {
+    margin-bottom: 40px;
+
+    img {
+        opacity: 0.2;
+    }
+}
+
+@media only screen and (min-width: 699px) {
+    #Works-content {
+        margin: 0 0 10px;
+        max-width: 699px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+        .carousel-caption {
+            font-size: 25px;
+        }
+    }
+}
+
+
+
+/* Works-comment
+------------------------------*/
+#Works-comment {
+    max-width: 100%;
+
+    p {
+        font-size: 14px;
+        line-height: 22.4px;
+        color: #6c7279;
+        text-align: left;
+    }
+
+    dl {
+        width: 100%;
+        margin: 0 0 25px;
+        text-align: center;
+        letter-spacing: 0.1em;
+    }
+
+    .comment {
+        margin-bottom: 20px;
+        padding: 0 15px;
+    }
+
+    .dl-center {
+        border: 0;
+        text-align: center;
+
+        dt {
+            margin-bottom: 5px;
+            font-weight: 400 !important;
+            font-size: 15px;
+        }
+
+        dd {
+            line-height: 1.7;
+            font-weight: 400 !important;
+            font-size: 15px;
+            margin-bottom: 15px;
+            word-break: break-all;
+            padding: 0 10px;
+
+            a {
+                color: #262423;
+                text-decoration: none;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 699px) {
+    #Works-comment {
+        max-width: 580px;
+        margin: 20px auto 0;
+
+        .comment {
+            margin-bottom: 40px;
+        }
+    }
+}

@@ -954,53 +954,57 @@ h3.point-title {
 
 /* 3.7.1 略歴
 ------------------------------*/
-#Bio h2.top {
-    color: #000;
-    display: block;
-    font-size: 45px;
-    font-style: normal;
-    letter-spacing: -3px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    text-align: center;
-}
+#Bio {
+    h2 {
+        &.top {
+            color: #000;
+            display: block;
+            font-size: 45px;
+            font-style: normal;
+            letter-spacing: -3px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
 
-#Bio h3 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, "Arial",
-        "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-        sans-serif;
-    font-weight: 300;
-    line-height: 1.2;
-    font-size: 30px;
-    margin-bottom: 15px;
-}
+    h3 {
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, "Arial",
+            "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
+            sans-serif;
+        font-weight: 300;
+        line-height: 1.2;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
 
-#Bio p {
-    font-size: 14px;
-    line-height: 22.4px;
-    color: #6c7279;
-    margin-bottom: 15px;
-}
+    p {
+        font-size: 14px;
+        line-height: 22.4px;
+        color: #6c7279;
+        margin-bottom: 15px;
+    }
 
-#Bio .dl-horizontal {
-    border-bottom: 1px rgba(200, 200, 200, 0.5) dashed;
-}
+    .dl-horizontal {
+        border-bottom: 1px rgba(200, 200, 200, 0.5) dashed;
 
-#Bio .dl-horizontal dt {
-    padding: 1.1em 1em 1em 1em;
-    line-height: 1.6;
-    font-size: 15px;
-    font-weight: 500;
-    margin-right: 0px;
-    border-top: 1px rgba(200, 200, 200, 0.5) dashed;
-}
+        dt {
+            padding: 1.1em 1em 1em 1em;
+            line-height: 1.6;
+            font-size: 15px;
+            font-weight: 500;
+            margin-right: 0px;
+            border-top: 1px rgba(200, 200, 200, 0.5) dashed;
+        }
 
-#Bio .dl-horizontal dd {
-    padding: 1.1em 1em 1em 10em;
-    font-size: 15px;
-    line-height: 1.6;
-    border-top: 1px rgba(200, 200, 200, 0.5) dashed;
-    margin-left: 110px;
+        dd {
+            padding: 1.1em 1em 1em 10em;
+            font-size: 15px;
+            line-height: 1.6;
+            border-top: 1px rgba(200, 200, 200, 0.5) dashed;
+            margin-left: 110px;
+        }
+    }
 }
 
 @media only screen and (max-width: 699px) {
@@ -1011,26 +1015,28 @@ h3.point-title {
 }
 
 @media only screen and (max-width: 480px) {
-    #About .dl-horizontal {
-        border-bottom: 0px rgba(200, 200, 200, 0.5) dashed;
-    }
+    #About {
+        .dl-horizontal {
+            border-bottom: 0px rgba(200, 200, 200, 0.5) dashed;
 
-    #About .dl-horizontal dt {
-        padding: 1.5em 0 0.3em;
-        border-top: 0;
-        border-bottom: 1px #ddd solid;
-        order-top: 0px rgba(200, 200, 200, 0.5) dashed;
-        margin-left: 0px;
-    }
+            dt {
+                padding: 1.5em 0 0.3em;
+                border-top: 0;
+                border-bottom: 1px #ddd solid;
+                border-top: 0px rgba(200, 200, 200, 0.5) dashed;
+                margin-left: 0px;
+            }
 
-    #About .dl-horizontal dd {
-        padding: 0.3em 0em 0em 0em;
-        border-top: 0px rgba(200, 200, 200, 0.5) dashed;
-        margin-left: 0px;
-    }
+            dd {
+                padding: 0.3em 0em 0em 0em;
+                border-top: 0px rgba(200, 200, 200, 0.5) dashed;
+                margin-left: 0px;
+            }
+        }
 
-    #About ul {
-        padding-left: 10px;
+        ul {
+            padding-left: 10px;
+        }
     }
 }
 
@@ -1055,92 +1061,99 @@ h3.point-title {
     margin: 0 0 10px;
 }
 
-.aboutUs h3 {
-    position: relative;
-    display: block;
-    margin: 50px 0 30px;
-    font-size: 24px;
-    line-height: 1.6;
-    letter-spacing: 0.12em;
-    font-weight: 200;
-    text-align: center;
-    pointer-events: none;
-    padding-top: 10px;
+.aboutUs {
+    h3 {
+        position: relative;
+        display: block;
+        margin: 50px 0 30px;
+        font-size: 24px;
+        line-height: 1.6;
+        letter-spacing: 0.12em;
+        font-weight: 200;
+        text-align: center;
+        pointer-events: none;
+        padding-top: 10px;
+    }
+
+    h4 {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    li {
+        background: none;
+        padding-left: 1.8em;
+        margin-bottom: 10px;
+        line-height: 1.7;
+        font-size: 14px;
+        position: relative;
+        padding-left: 2em;
+        margin: 0 0 0.8em;
+        font-size: 15px;
+        line-height: 2;
+        font-weight: 300;
+        line-height: 1.75;
+    }
 }
 
-.aboutUs h4 {
-    font-size: 16px;
-    line-height: 150%;
-}
+#Policy {
 
-.aboutUs li {
-    background: none;
-    padding-left: 1.8em;
-    margin-bottom: 10px;
-    line-height: 1.7;
-    font-size: 14px;
-    position: relative;
-    padding-left: 2em;
-    margin: 0 0 0.8em;
-    font-size: 15px;
-    line-height: 2;
-    font-weight: 300;
-    line-height: 1.75;
-}
+    .dl-horizontal {
+        dt {
+            padding: 2em 1em 1em 1em;
+            line-height: 1.6;
+            font-size: 15px;
+            font-weight: 500;
+            margin-right: 0px;
+            border-top: 1px rgba(200, 200, 200, 0.5) solid;
+        }
 
-#Policy .dl-horizontal dt {
-    padding: 2em 1em 1em 1em;
-    line-height: 1.6;
-    font-size: 15px;
-    font-weight: 500;
-    margin-right: 0px;
-    border-top: 1px rgba(200, 200, 200, 0.5) solid;
-}
+        dd {
+            padding: 1em 1em 1em 10em;
+            font-size: 15px;
+            line-height: 1.6;
+            border-top: 1px rgba(200, 200, 200, 0.5) solid;
+            margin-left: 40px;
+        }
+    }
 
-#Policy .dl-horizontal dd {
-    padding: 1em 1em 1em 10em;
-    font-size: 15px;
-    line-height: 1.6;
-    border-top: 1px rgba(200, 200, 200, 0.5) solid;
-    margin-left: 40px;
-}
+    li {
+        list-style: disc;
+        color: #000;
+    }
 
-#Policy li {
-    list-style: disc;
-    color: #000;
-}
+    dl {
+        color: #000;
+    }
 
-#Policy dl {
-    color: #000;
-}
+    ul.environment li {
+        list-style: none;
 
-#Policy ul.environment li {
-    list-style: none;
-}
+        dl {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
 
-#Policy ul.environment li dl {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
+        dt {
+            font-weight: normal;
+        }
 
-#Policy ul.environment li dt {
-    font-weight: normal;
-}
+        dd:after {
+            content: "/";
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+            margin: 0 10px;
+        }
 
-#Policy ul.environment li dd:after {
-    content: "/";
-    display: inline-block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    vertical-align: middle;
-    margin: 0 10px;
-}
-
-#Policy ul.environment li dd:last-child:after {
-    content: none;
+        dd:last-child:after {
+            content: none;
+        }
+    }
 }
 
 @media only screen and (max-width: 699px) {
@@ -1158,45 +1171,51 @@ h3.point-title {
         font-size: 35px;
     }
 
-    .aboutUs h3 {
-        padding: 25px 0 0;
-        font-size: 20px;
-        margin: 0 0 10px;
-    }
+    .aboutUs {
+        h3 {
+            padding: 25px 0 0;
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
 
-    .aboutUs h4 {
-        font-size: 18px;
-    }
+        h4 {
+            font-size: 18px;
+        }
 
-    .aboutUs li {
-        padding-left: 0.6em;
-        padding-right: 0.6em;
+        li {
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+        }
     }
 }
 
 @media only screen and (max-width: 480px) {
-    #Policy .dl-horizontal dt {
-        padding: 1.5em 0 0.3em;
-        border-top: 0;
-        margin-left: 0px;
-    }
+    #Policy {
+        .dl-horizontal {
+            dt {
+                padding: 1.5em 0 0.3em;
+                border-top: 0;
+                margin-left: 0px;
+            }
 
-    #Policy .dl-horizontal dd {
-        padding: 0.3em 0em 0em 1.5em;
-        margin-left: 0px;
-    }
+            dd {
+                padding: 0.3em 0em 0em 1.5em;
+                margin-left: 0px;
+            }
+        }
 
-    #Policy ul {
-        padding-left: 10px;
-    }
+        ul {
+            padding-left: 10px;
 
-    #Policy ul.environment {
-        padding-left: 0;
-    }
+            &.environment {
+                padding-left: 0;
 
-    #Policy ul.environment li {
-        padding-left: 0;
-        padding-right: 0;
+                li {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
     }
 
     #Policy ul.browser,
@@ -1226,20 +1245,48 @@ h3.point-title {
 /*------------------------------
 3.8 contact
 ------------------------------*/
-#contact h2.top {
-    color: #000;
-    display: block;
-    font-size: 45px;
-    font-style: normal;
-    letter-spacing: -3px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    text-align: center;
-}
+#contact {
+    h2 {
+        &.top {
+            color: #000;
+            display: block;
+            font-size: 45px;
+            font-style: normal;
+            letter-spacing: -3px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
 
-#contact .frame {
-    width: 65%;
-    margin: 0 auto;
+    .frame {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22.4px;
+        color: #6c7279;
+        margin: 0 0 10px;
+    }
+
+    legend {
+        display: block;
+        width: 100%;
+        padding: 0;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: inherit;
+        color: #333;
+        border: 0;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    label {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1254,54 +1301,30 @@ h3.point-title {
     }
 }
 
-#contact p {
-    font-size: 14px;
-    line-height: 22.4px;
-    color: #6c7279;
-    margin: 0 0 10px;
-}
-
-#contact legend {
-    display: block;
-    width: 100%;
-    padding: 0;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: inherit;
-    color: #333;
-    border: 0;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-#contact label {
-    font-size: 14px;
-}
-
 /* メールフォーム注意書き */
 .border-wrap-small {
     color: #000;
     border: 1px #766f6c dashed;
     padding: 1.5em 2.5em 0;
     margin: 2em 0;
-}
 
-.border-wrap-small li {
-    list-style-type: disc;
-    font-size: 15px;
-    color: #555;
-    padding-bottom: 10px;
-}
-
-@media only screen and (max-width: 768px) {
-    .border-wrap-small {
-        padding: 15px 10px 15px 0;
+    li {
+        list-style-type: disc;
+        font-size: 15px;
+        color: #555;
+        padding-bottom: 10px;
     }
 }
 
 .asterisk {
     margin: 0 0 0 0.2em;
     color: #f00;
+}
+
+@media only screen and (max-width: 768px) {
+    .border-wrap-small {
+        padding: 15px 10px 15px 0;
+    }
 }
 
 .wpcf7 input[type="text"],
@@ -1329,7 +1352,17 @@ h3.point-title {
     font-size: 14px;
     color: #fff;
     text-decoration: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #216973;
 }
+
+.wpcf7 input[type="submit"]:active {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
 
 .wpcf7 span.wpcf7-not-valid-tip {
     font-size: 80%;
@@ -1375,42 +1408,42 @@ span.wpcf7-not-valid-tip,
     width: 65%;
     margin: 0 auto;
     min-height: 600px;
-}
 
-#thanks h2 {
-    font-size: 25px;
-    line-height: 150%;
-    padding: 15px;
+    h2 {
+        font-size: 25px;
+        line-height: 150%;
+        padding: 15px;
+    }
 }
 
 .thanks_text {
     padding: 15px;
-}
 
-.thanks_text p {
-    font-size: 16px;
+    p {
+        font-size: 16px;
+    }
 }
 
 .topReturn {
     text-align: center;
     margin-top: 50px;
-}
 
-.topReturn a {
-    padding: 15px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: #2097a8;
-    font-size: 14px;
-    color: #fff;
-    text-decoration: none;
-}
+    a {
+        padding: 15px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #2097a8;
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
 
-.topReturn a:before {
-    font-family: FontAwesome;
-    content: "\f0da";
-    font-weight: normal;
-    padding-right: 10px;
+        &:before {
+            font-family: FontAwesome;
+            content: "\f0da";
+            font-weight: normal;
+            padding-right: 10px;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1437,103 +1470,107 @@ span.wpcf7-not-valid-tip,
 ------------------------------*/
 /* section ID WORK List
 ------------------------------*/
-#work-list h2.top {
-    color: #000;
-    display: block;
-    font-size: 45px;
-    font-style: normal;
-    letter-spacing: -3px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    text-align: center;
-}
+#work-list {
+    h2 {
+        &.top {
+            color: #000;
+            display: block;
+            font-size: 45px;
+            font-style: normal;
+            letter-spacing: -3px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
 
-#work-list h3 {
-    font-size: 18px;
-    line-height: 30px;
-    color: #5b4c5c;
-    font-weight: 300;
-    text-transform: none;
-    letter-spacing: 1px;
-    text-align: center;
-    padding-bottom: 10px;
-}
+    h3 {
+        font-size: 18px;
+        line-height: 30px;
+        color: #5b4c5c;
+        font-weight: 300;
+        text-transform: none;
+        letter-spacing: 1px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
 
-#work-list p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 23px;
-    letter-spacing: 0.2px;
-    color: #444444;
+    p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 23px;
+        letter-spacing: 0.2px;
+        color: #444444;
+    }
+
+    /* WORK List menuFrame */
+    .menuFrame {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+
+        ul {
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+            margin-bottom: 60px;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 -2px;
+
+            &:after {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 10px;
+                background: #938b94;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -5px;
+            }
+
+            &.last:after {
+                background: #fff;
+            }
+
+            a {
+                padding: 16px 30px;
+                font-size: 11px;
+                line-height: 15px;
+                font-weight: bold;
+                color: #6f6470;
+                text-transform: uppercase;
+                display: block;
+                text-decoration: none;
+                border-right: none;
+                letter-spacing: 2px;
+                transition-duration: 0.2s;
+                -webkit-transition-duration: 0.2s;
+
+                &:hover {
+                    border-color: #cfcfcf;
+                    color: #000;
+                    transition-duration: 0.2s;
+                    -webkit-transition-duration: 0.2s;
+                }
+
+                &.current {
+                    border: solid 1px #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 699px) {
     #work-list h3 {
         padding-bottom: 35px;
     }
-}
-
-/* WORK List menuFrame */
-#work-list .menuFrame {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#work-list .menuFrame ul {
-    margin: 0 auto;
-    text-align: center;
-    display: block;
-    margin-bottom: 60px;
-}
-
-#work-list .menuFrame ul li {
-    display: inline-block;
-    margin: 0 -2px;
-}
-
-#work-list .menuFrame ul li:after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 10px;
-    background: #938b94;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -5px;
-}
-
-#work-list .menuFrame ul li.last:after {
-    background: #fff;
-}
-
-#work-list .menuFrame ul li a {
-    padding: 16px 30px;
-    font-size: 11px;
-    line-height: 15px;
-    font-weight: bold;
-    color: #6f6470;
-    text-transform: uppercase;
-    display: block;
-    text-decoration: none;
-    border-right: none;
-    letter-spacing: 2px;
-    transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-}
-
-#work-list .menuFrame ul li a:hover {
-    border-color: #cfcfcf;
-    color: #000;
-    transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-}
-
-#work-list .menuFrame ul li a.current {
-    border: solid 1px #fff;
-    color: #000;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1869,192 +1906,4 @@ span.wpcf7-not-valid-tip,
     }
 }
 
-/*--------------------------------------------------------------
-3.11 single
---------------------------------------------------------------*/
-/*------------------------------
-3.11.1 single-works
-------------------------------*/
-/* worksTitle
-------------------------------*/
-#worksTitle {
-    text-align: center !important;
-    padding: 120px 0px 0px;
-}
-
-@media only screen and (min-width: 699px) {
-    #worksTitle {
-        padding: 180px 80px 20px;
-    }
-}
-
-#worksTitle h2 {
-    font-size: 24px;
-    font-weight: 200;
-    line-height: 1.6;
-    letter-spacing: 0.12em;
-    padding: 0 1px;
-}
-
-#worksTitle p {
-    line-height: 1.6;
-    font-family: "Spinnaker", sans-serif;
-    font-weight: 400 !important;
-    letter-spacing: 0.1em;
-    -webkit-font-smoothing: subpixel-antialiased;
-}
-
-#worksTitle p a {
-    color: #262423;
-    text-decoration: none;
-}
-
-#worksTitle p a:hover {
-    opacity: 0.6;
-}
-
-#worksTitle .header_cat {
-    font-size: 16px;
-    margin-bottom: 0.5em;
-}
-
-#worksTitle .clientName {
-    font-size: 18px;
-    color: #777;
-}
-
-#worksTitle .heading-sub-en {
-    margin-top: 5px;
-    font-size: 13px;
-    word-break: break-all;
-    padding: 0 10px;
-}
-
-/* Works-content 
-------------------------------*/
-#Works-content {
-    margin: 10px 0;
-}
-
-@media only screen and (min-width: 699px) {
-    #Works-content {
-        margin: 0 0 10px;
-        max-width: 699px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
-}
-
-#Works-content .carousel {
-    width: 100%;
-    margin: auto;
-}
-
-#Works-content .carousel img {
-    width: 100%;
-}
-
-#Works-content .carousel-caption {
-    font-size: 18px;
-    color: #6c7279;
-    margin-bottom: 30px;
-}
-
-@media only screen and (min-width: 699px) {
-    #Works-content .carousel-caption {
-        font-size: 25px;
-    }
-}
-
-#Works-content .carousel-indicators li {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #6c7279;
-    border-radius: 20px;
-}
-
-#Works-content .carousel-indicators .active {
-    width: 31px;
-    height: 31px;
-    margin: 9px;
-    background-color: #6c7279;
-}
-
-/* イントラサイトの場合 */
-.intra {
-    margin-bottom: 40px;
-}
-
-.intra img {
-    opacity: 0.2;
-}
-
-/* Works-comment
-------------------------------*/
-#Works-comment {
-    max-width: 100%;
-}
-
-#Works-comment .comment {
-    margin-bottom: 20px;
-    padding: 0 15px;
-}
-
-#Works-comment .dl-center {
-    border: 0;
-    text-align: center;
-}
-
-#Works-comment p {
-    font-size: 14px;
-    line-height: 22.4px;
-    color: #6c7279;
-    text-align: left;
-}
-
-#Works-comment dl {
-    width: 100%;
-    margin: 0 0 25px;
-    text-align: center;
-    letter-spacing: 0.1em;
-}
-
-#Works-comment .dl-center dt {
-    margin-bottom: 5px;
-    font-weight: 400 !important;
-    font-size: 15px;
-}
-
-#Works-comment .dl-center dd {
-    line-height: 1.7;
-    font-weight: 400 !important;
-    font-size: 15px;
-    margin-bottom: 15px;
-    word-break: break-all;
-    padding: 0 10px;
-}
-
-#Works-comment .dl-center dd a {
-    color: #262423;
-    text-decoration: none;
-}
-
-#Works-comment .dl-center dd a:hover {
-    opacity: 0.6;
-}
-
-@media only screen and (min-width: 699px) {
-    #Works-comment {
-        max-width: 580px;
-        margin: 20px auto 0;
-    }
-
-    #Works-comment .comment {
-        margin-bottom: 40px;
-    }
-}
+@import "_single.scss";
